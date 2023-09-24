@@ -34,9 +34,9 @@ class DatabaseUnix
             // secure - consider a more secure solution such as
             // Cloud Secret Manager (https://cloud.google.com/secret-manager) to help
             // keep secrets safe.
-            $username = getenv('DB_USER'); // e.g. 'your_db_user'
-            $password = getenv('DB_PASS'); // e.g. 'your_db_password'
-            $dbName = getenv('DB_NAME'); // e.g. 'your_db_name'
+            $username = getenv('MOODLE_DATABASE_USER'); // e.g. 'your_db_user'
+            $password = getenv('MOODLE_DATABASE_PASSWORD'); // e.g. 'your_db_password'
+            $dbName = getenv('MOODLE_DATABASE_NAME'); // e.g. 'your_db_name'
             $instanceUnixSocket = getenv('INSTANCE_UNIX_SOCKET'); // e.g. '/cloudsql/project:region:instance'
 
             // Connect using UNIX sockets
